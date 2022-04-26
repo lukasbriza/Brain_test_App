@@ -1,0 +1,1 @@
+Simplified form of Braint Training developed by DR. Kawashima.

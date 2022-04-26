@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAClB,kBAAkB,EAAE,IAAI;CACzB;;AACD,AAAA,mBAAmB,AAAA,SAAS,CAAC;EAC3B,KAAK,EAAE,IAAI;CACZ;;AACD,AAAA,mBAAmB,AAAA,WAAW,CAAC;EAC7B,MAAM,EAAE,IAAI;CACb;;AACD,AAAA,yBAAyB,CAAC;EACxB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,eAAe;EAAE,mDAAmD;EAC5E,gBAAgB,EAAE,kBAAkB;CACrC;;AACD,AAAA,yBAAyB,CAAC;EACxB,gBAAgB,EAAE,KAAkB;EACpC,aAAa,EAAE,GAAG;CACnB;;AAED,2CAA2C;AAG3C,sCAAsC",
+    "sources": [
+        "index.scss",
+        "../Layout/_layout.scss",
+        "../Pages/_home.scss",
+        "../Pages/_calculations.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
