@@ -1,0 +1,26 @@
+.input {
+  input {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    border: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: rgba(109, 109, 109, 0.15);
+    border-bottom: 1px solid #001220;
+  }
+  input:focus {
+    background-color: #00122065;
+  }
+}
+
+.input_error {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  margin: 10px 0;
+  color: rgba(255, 0, 0, 0.774);
+}

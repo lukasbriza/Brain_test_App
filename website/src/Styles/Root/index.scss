@@ -16,6 +16,8 @@
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
 }
+/*FONT*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap");
 
 /*FRAMEWORK - Structure and layout files.*/
 @import "../Layout/layout";
@@ -23,3 +25,13 @@
 /*MODULES - Re-usable site elements.*/
 @import "../Pages/home";
 @import "../Pages/calculations";
+
+@import "../Modules/menu";
+@import "../Modules/waves";
+@import "../Modules/button";
+@import "../Modules/calculationUnit";
+@import "../Modules/input";
+@import "../Modules/completedCounter";
+@import "../Modules/timer";
+
+@import "../Layout/modificationClasses";

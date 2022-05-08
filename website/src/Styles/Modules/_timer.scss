@@ -1,0 +1,17 @@
+.timer_wrapper {
+  position: relative;
+  height: 65px;
+  width: 65px;
+  right: 20px;
+  justify-self: flex-end;
+  .timer_count {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+  }
+  .timer_picture {
+    position: absolute;
+  }
+}

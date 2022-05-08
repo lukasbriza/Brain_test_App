@@ -1,0 +1,171 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+html {
+}
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 3000px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgb(61, 61, 61);
+  border-top: none;
+}
+
+.app {
+  overflow: hidden;
+}
+#menu {
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  grid-template-areas: "icon routes .";
+  align-items: center;
+  justify-items: center;
+
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 45px 45px;
+    grid-template-areas: "icon" "routes";
+    align-items: end;
+    height: 100px !important;
+  }
+  .appIcon {
+    position: relative;
+    grid-area: icon;
+    transform: scale(3);
+    opacity: 0;
+  }
+  .routeWrapper {
+    grid-area: "routes";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+#home {
+  padding-top: 70px;
+  position: absolute;
+
+  .inputWrapper {
+    width: 40%;
+    height: 300px;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+
+    display: none;
+    opacity: 0;
+    min-width: 500px;
+
+    @media (max-width: 550px) {
+      min-width: 340px;
+    }
+
+    #NoC_header {
+      padding-top: 10px;
+      padding-bottom: 30px;
+
+      @media (max-width: 550px) {
+        font-size: 21px !important;
+      }
+    }
+  }
+}
+
+.backgroundWaves {
+  position: absolute;
+  z-index: -1;
+  height: 110vh;
+}
+
+#calculations {
+  padding-top: 70px;
+  display: grid;
+
+  .noc_wrapper {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+
+    display: grid;
+    max-width: 1500px;
+    grid-auto-columns: max-content;
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(120px, auto);
+    grid-gap: 10px 10px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (min-width: 1450px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @media (max-width: 845px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 560px) {
+      padding-top: 50px;
+
+      .unit {
+        width: 220px;
+      }
+    }
+
+    @media (max-width: 375px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      .unit {
+        width: 250px;
+      }
+    }
+  }
+
+  .summary_wrapper {
+    position: relative;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: "button button" "completed timer";
+
+    align-items: center;
+    padding-bottom: 5px;
+
+    .calculations_button {
+      position: relative;
+      grid-area: button;
+      justify-self: center;
+      margin: 15px 0px;
+
+      span {
+      }
+    }
+    .completedCounter_wrapper {
+      grid-area: completed;
+    }
+    .timer_wrapper {
+      grid-area: timer;
+    }
+  }
+}
+
+.transitionDiv {
+  top: 0px;
+  height: 100%;
+}

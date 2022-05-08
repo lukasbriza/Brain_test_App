@@ -1,0 +1,45 @@
+.button {
+  $color: #001220;
+
+  width: 150px;
+  height: 45px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid $color;
+
+  .button_text {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $color;
+    position: absolute;
+  }
+  span {
+    display: block;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: $color;
+    transition: width 0.5s, height 0.5s;
+  }
+}
+.button:hover {
+  .button_text {
+    z-index: +1;
+    color: white;
+  }
+  span {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+.button:active {
+  span {
+    background: #002541;
+  }
+}

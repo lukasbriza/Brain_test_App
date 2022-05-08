@@ -1,0 +1,12 @@
+.completedCounter_wrapper {
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 20px;
+  .cimpletedCounter_text {
+    text-transform: uppercase;
+  }
+  .cimpletedCounter_score {
+    margin-left: 10px;
+  }
+}

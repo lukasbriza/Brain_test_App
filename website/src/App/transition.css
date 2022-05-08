@@ -1,0 +1,40 @@
+.up-exit {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.up-exit-active {
+  top: -100vh;
+  transition: top 1.5s ease-out;
+}
+
+.up-enter {
+  position: absolute;
+  top: 100vh;
+  left: 0px;
+}
+.up-enter-active {
+  top: 0px;
+  transition: top 1.5s ease-out;
+}
+
+.down-exit {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.down-exit-active {
+  top: 100vh;
+  transition: top 1.5s ease-out;
+}
+
+.down-enter {
+  position: absolute;
+  top: -100vh;
+  left: 0px;
+}
+.down-enter-active {
+  top: 0px;
+  transition: top 1.5s ease-out;
+}
