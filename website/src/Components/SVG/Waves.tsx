@@ -1,10 +1,8 @@
-import { SVGProps, useEffect, useState, Ref, forwardRef, useContext } from 'react'
-import { AppContext } from '../../App/Context'
+import { SVGProps, useEffect, useState, Ref, forwardRef } from 'react'
 
 
 const Waves = forwardRef((props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => {
     const [scale, setScale] = useState<number>()
-    const appContext = useContext(AppContext)
     useEffect(() => {
         const initWindowWidth = document.body.clientWidth
         const svgWidth = 1214
@@ -14,7 +12,6 @@ const Waves = forwardRef((props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement
             const windowWidth = document.body.clientWidth
             const svgWidth = 1214
             const result = windowWidth / svgWidth + 1.5
-            console.log(windowWidth)
             setScale(result)
         })
         setScale(initResult)
